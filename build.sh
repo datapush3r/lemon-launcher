@@ -13,8 +13,6 @@ OUT="$ROOT/out"
 KEYSTORE="${KEYSTORE_PATH:-$ROOT/debug.keystore}"
 KEYSTORE_PASS="${KEYSTORE_PASSWORD:-android}"
 KEY_ALIAS="${KEY_ALIAS:-androiddebugkey}"
-VERSION_CODE="${VERSION_CODE:-1}"
-VERSION_NAME="${VERSION_NAME:-1.0}"
 
 rm -rf "$OUT"
 mkdir -p "$OUT/classes"
@@ -40,8 +38,6 @@ echo "== aapt2 link =="
     --manifest "$APP/AndroidManifest.xml" \
     --min-sdk-version 21 \
     --target-sdk-version 34 \
-    --version-code "$VERSION_CODE" \
-    --version-name "$VERSION_NAME" \
     "$OUT/compiled_res.zip" \
     -o "$OUT/app-unsigned.apk"
 
