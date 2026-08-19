@@ -1,0 +1,22 @@
+Categories:
+  - System
+License: MIT
+AuthorName: datapush3r
+SourceCode: https://github.com/datapush3r/lemon-launcher
+IssueTracker: https://github.com/datapush3r/lemon-launcher/issues
+
+RepoType: git
+Repo: https://github.com/datapush3r/lemon-launcher.git
+
+Builds:
+  - versionName: '1.0'
+    versionCode: 1
+    commit: v1.0
+    output: out/lemonlauncher.apk
+    build:
+      - ./build.sh
+
+AutoUpdateMode: Version
+UpdateCheckMode: Tags
+CurrentVersion: '1.0'
+CurrentVersionCode: 1

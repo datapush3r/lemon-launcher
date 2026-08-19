@@ -1,0 +1,1 @@
+A minimal text-only Android TV launcher: pick what shows, nothing else.

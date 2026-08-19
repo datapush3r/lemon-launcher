@@ -1,0 +1,12 @@
+Lemon Launcher is the smallest, plainest Android TV home screen that could work: a black screen, a text list of the apps and inputs you pick, and nothing else.
+
+Features:
+
+* Under 17KB, no libraries, no AndroidX, no Kotlin runtime
+* Zero background components — nothing runs unless you're looking at it
+* Text-only, no icons to load or decode
+* Works from Android 5.0 (API 21) up
+* Long press to open the add/remove picker, listing every installed app, TV input (HDMI, etc.), and a couple of built-in actions (Settings, Free Up Memory)
+* Short press an item to launch it, long press again to remove it from your list
+
+No ads, no tracking, no network permission at all. Fully open source.

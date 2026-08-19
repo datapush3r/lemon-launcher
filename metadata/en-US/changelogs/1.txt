@@ -1,0 +1,5 @@
+Initial release.
+
+* Text-only launcher with a picker for apps, TV inputs (HDMI, etc.), Settings, and Free Up Memory
+* Long press to add/remove items, short press to launch
+* Under 17KB, zero background components
