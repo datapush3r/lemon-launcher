@@ -42,7 +42,8 @@ echo "== aapt2 link =="
     -o "$OUT/app-unsigned.apk"
 
 echo "== add classes.dex =="
-(cd "$OUT" && zip -q app-unsigned.apk classes.dex)
+TZ=UTC touch -t 198001010000.00 "$OUT/classes.dex"
+(cd "$OUT" && zip -q -X app-unsigned.apk classes.dex)
 
 echo "== zipalign =="
 "$BUILD_TOOLS/zipalign" -f 4 "$OUT/app-unsigned.apk" "$OUT/app-aligned.apk"
